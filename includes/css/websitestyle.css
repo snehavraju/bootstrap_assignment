@@ -1,5 +1,6 @@
 .navbar {
 	background-color: #2f4f4f;
+
 	
 }
 #fa fa-angle-double-right{
@@ -7,11 +8,13 @@
 }
 
 .nav{
-	font-size: 25px;
-	padding:15px 20px;
-	padding-bottom: 10px;
+	font-size: 23px;
+	padding-top: 15px;
+	
 
 }
+
+
 .iconbar{
 	background-color: #2f4f4f;
 }
@@ -27,9 +30,8 @@
 
 .dropdown-menu a:hover{color:white;}
 
-#welcome{
-	margin-top: 150px;
-}
+#welcome{margin-top: 100px;}
+#myCarosel{margin-top: 100px;}
 
 #welcomehead{
 	font-size: 30px;
@@ -42,13 +44,14 @@
 }
 
 .panel-title{
-	font-size: 25px;
+	font-size: 23px;
 
 }
 .panel-heading{
 	background-color: #DCDCDC;
 }
-
+ 
+ 
 
 
 body{
@@ -60,13 +63,14 @@ body{
 
 h1{
 	
-	font-size:60px;
+	font-size:50px;
 	color:white;
 	font-family: 'Emblema One';
-	margin-top: 10px;
+
 }
 
 .navbar-nav>li>a{color:white;}
+.navbar-nav>li>a:hover{color:#A9A9A9;}
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
             background-image:none; background:#2F4F4F;
  }
@@ -90,7 +94,7 @@ h1{
 
    
 #myCarousel{
-	margin-top: 120px;
+	
 	width:100%;
 }
 
@@ -112,13 +116,35 @@ h1{
 
 
 @media (max-width: 480px) {
+
+	h1{font-size: 35px;}
+	.nav{
+		font-size: 20px;
+	}
+
+	#welcome{
+	margin-top: 100px;
+}
+
+#welcomehead{
+	font-size: 25px;
 	
 }
 
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-	#myCarousel {height:200px;}
-   #myCarousel .item{ height:200px;  }
+#welcomecontent{
+	
+	font-size: 18px;
+}
+#myCarousel{height: 220px;}
+
+#myCarousel .item{margin-top: 7px; margin-bottom: 7px; height: 200px;}	
+
+.panel-title{
+	font-size: 10px;
+}
+
+#username, #password{padding:2px 2px;}
+
 #slide1{
    background: url('../../images/hostel_small.jpg') top center no-repeat;
 }
@@ -127,9 +153,79 @@ h1{
 }
 #slide3{
    background: url('../../images/mainbuilding_small.jpg') top center no-repeat;
-}}
+}
+  
+	
+}
+
+
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 768px) {
+
+	h1{font-size: 35px;}
+	.nav{
+		font-size: 20px;
+	}
+
+	#welcome{
+	margin-top: 120px;
+}
+
+#welcomehead{
+	font-size: 22px;
+	
+}
+
+#welcomecontent{
+	
+	font-size: 17px;
+}
+
+#myCarousel{margin-top: 120px;}
+  #myCarousel .item{  margin-top: 10px; margin-bottom: 10px; }
+
+	
+}
 
 @media (min-width: 1200px) {
+
+	.nav{
+	font-size: 23px;
+	padding-top: 15px;
+	
+
+}
+
+
+	h1{
+	
+	font-size:50px;
+	color:white;
+	font-family: 'Emblema One';
+
+}
+	#myCarousel{
+	
+	width:100%;
+	margin-top: 120px;
+}
+
+#welcome{
+	margin-top: 160px;
+}
+
+#welcomehead{
+	font-size: 30px;
+	color:#2E8B57;
+}
+
+#welcomecontent{
+	color:#2f4f4f;
+	font-size: 20px;
+	line-height: 35px;
+}
+
 
    #myCarousel .item{ height:400px; margin-top: 10px; margin-bottom: 10px; }
 
@@ -152,6 +248,7 @@ h1{
 
 .panel-title{
 	text-align: center;
+	font-size: 25px;
 }
 
 .panel{
@@ -243,22 +340,25 @@ color:#008000;}
 
 .modal-form{
 	border:3px solid #f1f1f1;
+	padding:10px 10px 10px 10px;
 }
 
 #username, #password{
     width: 100%;
-    padding: 12px 20px;
+    padding: 8px 15px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
 
+#cancelbtn{background-color:#f1f1f1;
+margin-top: 30px;}
+
+.alert{margin-top: 20px;display: none;}
 
 
-.container {
-    padding: 16px;
-}
+
 
 footer{
 	height:100%;
@@ -266,7 +366,11 @@ footer{
 	color: white;
 	font-size: 18px;
 	text-align: center;
+	
+	
 }
+
+
 
 .navigation a {
 	color: white;

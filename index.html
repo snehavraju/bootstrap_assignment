@@ -18,13 +18,14 @@
 
 
   		<link rel ="stylesheet" href ="css/960-grid_minifile.css">
-  		<link rel ="stylesheet"  href ="includes/css/websitestyles_minified.css">
+  		<link rel ="stylesheet"  href ="includes/css/websitestyle_minified.css">
  		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    		<link rel="stylesheet" href="style/slider-def.css"> 
    		<link href='https://fonts.googleapis.com/css?family=Odor Mean Chey' rel='stylesheet'>
    		<link href='https://fonts.googleapis.com/css?family=Emblema One' rel='stylesheet'>
 
    		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+      <script src="includes/js/jscode.js"></script>
  	</head>
 
  	<body>
@@ -94,11 +95,11 @@
     <div class="row">
 
       <div class="col-sm-3" id="welcome">
-       <p id="welcomehead">WELCOME!</p>
+        <p id="welcomehead">WELCOME!</p>
         <p id="welcomecontent">National Institute of Technology, Karnataka (NITK),formerly known as Karnataka Regional Engineering College (KREC), also known as NIT Surathkal,is a public engineering university at Surathkal, Mangalore. </p>
       </div>
       <div class="col-sm-9">
-		    <div class="carousel slide pull-right" id="myCarousel">
+		    <div class="carousel slide" id="myCarousel">
              <!--Indicators-->
              <ol class="carousel-indicators">
              	  <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
@@ -144,7 +145,7 @@
          				<a href="#"><i class="fa fa-angle-double-right fa-lg"></i>  Recruitment of TECHNICAL OFFICER (MIS) on Contract</a><br/><p></p><p></p>
          				<a href="#"><i class="fa fa-angle-double-right fa-lg"></i>  Director's Message on Teachers' Day</a><br/><p></p><p></p>
          				<a href="#"><i class="fa fa-angle-double-right fa-lg"></i>  Advertisement for the post of Lab. Asst. in Bio-fuel centre, NITK</a><br/><p></p><p></p>
-         				<a href="#"><i class="fa fa-angle-double-right fa-lg"></i>  Short listed candidate for JRF in EEE dept</a><br/><p></p><p></p>
+         				
          				<a href="#"><i class="fa fa-angle-double-right fa-lg"></i>  Advertisement for Project Assistant DST SERB in Chemical Dept</a><br/><p></p><p></p>
          				
 
@@ -169,7 +170,7 @@
                <a href="#"><i class="fa fa-angle-double-right fa-lg"></i> NITK Surathkal Ranking in 2017</a><br/><p></p>
                 
                 </div>   			
-         			<a href="#" target="_blank" class="btn btn-warning btn-block">More News</a>
+         			<a href="#" class="btn btn-warning btn-block">More News</a>
          		</div><!--end panel-->
          	</div><!--end feature-->
         
@@ -261,7 +262,7 @@
                 
                         </div><!--end modal header-->
                        <div class="modal-body">
-                         <form class="modal-form">
+                         <form class="modal-form" id="theForm" method="post" onSubmit="return validateTextbox();">
                             <div class="container">
                 
                             <label><b>Username</b></label>
@@ -271,9 +272,10 @@
 
                             <button type="submit" id="submitbutton">Login</button>
                             <input type="checkbox" checked="checked"> Remember me
+                            <br/>
                            </div>
 
-                          <div class="container" style="background-color:#f1f1f1">
+                          <div class="container" id="cancelbtn" >
                               <button type="button" class="cancelbtn">Cancel</button>
                               <span class="psw">Forgot <a href="#">password?</a></span>
                           </div>
@@ -299,6 +301,10 @@
         </div><!--end container-->
 
         <footer>
+      
+
+
+            
            <h5>National Institute of Technology Karnataka</h5>
             <h5>NH 66, Srinivas Nagar, Surathkal,</h5>
             <h5>Mangaluru, Karnataka 575025</h5>
@@ -307,7 +313,8 @@
             <i class="fa fa-facebook-square fa-lg" ></i>
             <i class="fa fa-linkedin-square fa-lg"></i>
             <i class="fa fa-twitter-square fa-lg"></i>
-            <h5>Copyright &copy; 2017 National Institute of Technology Karnataka,Surathkal</h5>   
+            <h5>Copyright &copy; 2017 National Institute of Technology Karnataka,Surathkal</h5>  
+             
 		    </footer>
 
 
